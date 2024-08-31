@@ -1,0 +1,44 @@
+{
+    "name": "nodejs-fsd61wde",
+    "version": "1.0.0",
+    "description": "It is backend repo for the course FSD61WDE",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Vishnupriya1996TH/node-fsd61wde.git"
+    },
+    "keywords": [
+        "backend",
+        "nodejs",
+        "expressjs",
+        "mongodb",
+        "postman",
+        "vscode",
+        "axios",
+        "body-parser",
+        "cookie-parser",
+        "morgan",
+        "lib",
+        "env",
+        "lib",
+        "jsonwebtoken",
+        "middleware",
+        "logger"
+    ],
+    "author": "priya thamilarasan",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Vishnupriya1996TH/node-fsd61wde/issues"
+    },
+    "homepage": "https://github.com/Vishnupriya1996TH/node-fsd61wde#readme",
+    "dependencies": {
+        "express": "^4.19.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.4"
+    }
+}
