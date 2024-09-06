@@ -1,11 +1,16 @@
 const { default: mongoose } = require("mongoose");
 
-// create a schema
 const MentorSchema = new mongoose.Schema({
     name: String,
     email: String,
     expertise: String,
     years_of_experience: Number,
+    students: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Student'
+        }
+    ],
     createdAt: {
         type: Date,
         default: Date.now
@@ -13,8 +18,7 @@ const MentorSchema = new mongoose.Schema({
     updatedAt: {
         type: Date,
         default: Date.now
-    }
+    },
 })
 
-// create a model and export it
 module.exports = mongoose.model('Mentor', MentorSchema, 'mentors');
